@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="256" height="256" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="256" height="256" fill="#2c3e50" rx="20"/>
+  
+  <!-- Shield outline -->
+  <path d="M128 40 L180 60 L180 140 C180 180 128 220 128 220 C128 220 76 180 76 140 L76 60 Z" 
+        fill="#34495e" stroke="#ecf0f1" stroke-width="3"/>
+  
+  <!-- Shield inner -->
+  <path d="M128 55 L170 70 L170 130 C170 165 128 200 128 200 C128 200 86 165 86 130 L86 70 Z" 
+        fill="#3498db" opacity="0.8"/>
+  
+  <!-- Crosshair/target -->
+  <g transform="translate(128, 128)">
+    <!-- Outer circle -->
+    <circle cx="0" cy="0" r="35" fill="none" stroke="#e74c3c" stroke-width="3"/>
+    
+    <!-- Inner circles -->
+    <circle cx="0" cy="0" r="25" fill="none" stroke="#f39c12" stroke-width="2"/>
+    <circle cx="0" cy="0" r="15" fill="none" stroke="#2ecc71" stroke-width="2"/>
+    <circle cx="0" cy="0" r="5" fill="#e74c3c"/>
+    
+    <!-- Crosshair lines -->
+    <line x1="-45" y1="0" x2="-25" y2="0" stroke="#ecf0f1" stroke-width="2"/>
+    <line x1="25" y1="0" x2="45" y2="0" stroke="#ecf0f1" stroke-width="2"/>
+    <line x1="0" y1="-45" x2="0" y2="-25" stroke="#ecf0f1" stroke-width="2"/>
+    <line x1="0" y1="25" x2="0" y2="45" stroke="#ecf0f1" stroke-width="2"/>
+  </g>
+  
+  <!-- Network nodes (representing domain scanning) -->
+  <g opacity="0.7">
+    <!-- Top nodes -->
+    <circle cx="60" cy="60" r="4" fill="#2ecc71"/>
+    <circle cx="196" cy="60" r="4" fill="#2ecc71"/>
+    
+    <!-- Side nodes -->
+    <circle cx="40" cy="128" r="4" fill="#f39c12"/>
+    <circle cx="216" cy="128" r="4" fill="#f39c12"/>
+    
+    <!-- Bottom nodes -->
+    <circle cx="60" cy="196" r="4" fill="#e74c3c"/>
+    <circle cx="196" cy="196" r="4" fill="#e74c3c"/>
+    
+    <!-- Connection lines to center -->
+    <line x1="60" y1="60" x2="128" y2="128" stroke="#ecf0f1" stroke-width="1" opacity="0.5"/>
+    <line x1="196" y1="60" x2="128" y2="128" stroke="#ecf0f1" stroke-width="1" opacity="0.5"/>
+    <line x1="40" y1="128" x2="128" y2="128" stroke="#ecf0f1" stroke-width="1" opacity="0.5"/>
+    <line x1="216" y1="128" x2="128" y2="128" stroke="#ecf0f1" stroke-width="1" opacity="0.5"/>
+    <line x1="60" y1="196" x2="128" y2="128" stroke="#ecf0f1" stroke-width="1" opacity="0.5"/>
+    <line x1="196" y1="196" x2="128" y2="128" stroke="#ecf0f1" stroke-width="1" opacity="0.5"/>
+  </g>
+  
+  <!-- Radar waves (representing scanning) -->
+  <g transform="translate(128, 128)" opacity="0.6">
+    <circle cx="0" cy="0" r="50" fill="none" stroke="#2ecc71" stroke-width="1" opacity="0.8">
+      <animate attributeName="r" from="50" to="70" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" from="0.8" to="0" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="0" cy="0" r="50" fill="none" stroke="#2ecc71" stroke-width="1" opacity="0.6">
+      <animate attributeName="r" from="50" to="70" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" from="0.6" to="0" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Binary code decoration -->
+  <text x="20" y="240" font-family="monospace" font-size="8" fill="#7f8c8d" opacity="0.5">
+    01001001 01110011 01110010 01100001 01100101 01101100
+  </text>
+  
+  <!-- Domain extension indicator -->
+  <text x="128" y="240" font-family="Arial" font-size="10" fill="#ecf0f1" text-anchor="middle">
+    .IL Security Scanner
+  </text>
+  
+  <!-- Lock symbol (security) -->
+  <g transform="translate(180, 40)">
+    <rect x="-8" y="5" width="16" height="12" fill="#f39c12" rx="2"/>
+    <path d="M-6 -5 C-6 -8 -3 -10 0 -10 C3 -10 6 -8 6 -5 L6 5 L-6 5 Z" fill="#f39c12"/>
+    <circle cx="0" cy="11" r="2" fill="#2c3e50"/>
+  </g>
+  
+  <!-- Warning/Alert symbol -->
+  <g transform="translate(76, 40)">
+    <path d="M0 -10 L8 10 L-8 10 Z" fill="#e74c3c"/>
+    <text x="0" y="5" font-family="Arial" font-size="12" fill="white" text-anchor="middle">!</text>
+  </g>
+</svg>

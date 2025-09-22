@@ -1,0 +1,23 @@
+{
+  "scan_info": {
+    "keyword": "mossad",
+    "scan_date": "2025-09-22 19:20:00",
+    "total_domains_found": 2,
+    "total_vulnerabilities": 8,
+    "scanner_version": "1.0.0"
+  },
+  "domains": [
+    "www.mossad.gov.il",
+    "mossad.gov.il"
+  ],
+  "vulnerabilities": [
+    "domain",
+    "scan_time",
+    "total_vulnerabilities",
+    "vulnerabilities",
+    "domain",
+    "scan_time",
+    "total_vulnerabilities",
+    "vulnerabilities"
+  ]
+}
